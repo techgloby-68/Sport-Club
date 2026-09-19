@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0B0F17;
+    color: #F8FAFC;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom Sports Glows & Glassmorphism */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(0, 188, 239, 0.15);
+}
+
+.gold-podium {
+  background: linear-gradient(135deg, rgba(252, 211, 77, 0.15) 0%, rgba(217, 119, 6, 0.05) 100%);
+  border: 1px solid rgba(252, 211, 77, 0.4);
+  box-shadow: 0 0 25px rgba(252, 211, 77, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gold-podium:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 40px rgba(252, 211, 77, 0.3);
+}
+
+.silver-podium {
+  background: linear-gradient(135deg, rgba(203, 213, 225, 0.15) 0%, rgba(100, 116, 139, 0.05) 100%);
+  border: 1px solid rgba(203, 213, 225, 0.3);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.silver-podium:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 30px rgba(203, 213, 225, 0.2);
+}
+
+.bronze-podium {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15) 0%, rgba(180, 83, 9, 0.05) 100%);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bronze-podium:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.2);
+}
+
+/* Kinetic Hover Effects for Buttons & Links */
+.btn-interactive {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-interactive:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.1);
+}
+
+.btn-interactive:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Smooth Table Row Hover */
+.table-row-hover {
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.table-row-hover:hover {
+  background-color: rgba(30, 41, 59, 0.6) !important;
+}
+
+/* Kinetic Neon Text Glow */
+.text-neon-glow {
+  text-shadow: 0 0 12px rgba(204, 255, 0, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F17;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

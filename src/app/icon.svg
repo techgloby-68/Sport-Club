@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F17"/>
+      <stop offset="100%" stop-color="#151C2C"/>
+    </linearGradient>
+    <linearGradient id="sportsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00BCEB"/>
+      <stop offset="50%" stop-color="#CCFF00"/>
+      <stop offset="100%" stop-color="#FC4C02"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Icon Tile -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  <rect width="504" height="504" x="4" y="4" rx="124" fill="none" stroke="url(#sportsGrad)" stroke-width="8" stroke-opacity="0.4"/>
+
+  <!-- Cisco Golden Gate Bridge Bars (Small top emblem) -->
+  <g fill="#00BCEB" opacity="0.85">
+    <rect x="180" y="100" width="12" height="30" rx="6"/>
+    <rect x="204" y="80" width="12" height="50" rx="6"/>
+    <rect x="228" y="100" width="12" height="30" rx="6"/>
+    <rect x="252" y="60" width="12" height="70" rx="6" fill="#CCFF00"/>
+    <rect x="276" y="100" width="12" height="30" rx="6"/>
+    <rect x="300" y="80" width="12" height="50" rx="6"/>
+    <rect x="324" y="100" width="12" height="30" rx="6"/>
+  </g>
+
+  <!-- Dynamic Kinetic Sports Athlete Runner & Flame Symbol -->
+  <g filter="url(#glow)">
+    {/* Head */}
+    <circle cx="340" cy="180" r="32" fill="#CCFF00"/>
+
+    {/* Dynamic Running Motion Body & Torch Flame */}
+    <path d="M 230,220 C 270,180 330,190 360,240 L 410,210 L 430,240 L 360,280 L 310,250 C 290,290 270,340 240,400 L 290,440 L 260,470 L 190,400 C 220,330 250,290 260,250 C 230,270 190,300 150,330 L 130,290 Z" fill="url(#sportsGrad)"/>
+
+    {/* Speed Trail Rays */}
+    <path d="M 80,240 L 170,240 L 140,265 L 80,265 Z" fill="#00BCEB" opacity="0.9"/>
+    <path d="M 110,190 L 210,190 L 180,215 L 110,215 Z" fill="#CCFF00" opacity="0.9"/>
+    <path d="M 60,290 L 140,290 L 110,315 L 60,315 Z" fill="#FC4C02" opacity="0.9"/>
+  </g>
+</svg>
